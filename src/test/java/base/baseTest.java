@@ -29,7 +29,8 @@ private WebDriver driver;
         driver.navigate().forward();
         // làm mới trang hiện tại
         driver.navigate().refresh();
-        
+        ///
+        //start
     }
 
 
