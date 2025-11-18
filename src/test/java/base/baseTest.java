@@ -1,7 +1,9 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -22,15 +24,18 @@ private WebDriver driver;
         driver.manage().window().setSize(new org.openqa.selenium.Dimension(600, 800));
         driver.manage().window().setPosition(new org.openqa.selenium.Point(50, 50));
         // điều hướng đến một URL mới
-        driver.navigate().to("https://www.facebook.com/groups/734948885812178");
+       // driver.navigate().to("https://www.facebook.com/groups/734948885812178");
         // điều hướng quay lại trang trước đó
         driver.navigate().back();
         // điều hướng tiến về trang tiếp theo
         driver.navigate().forward();
         // làm mới trang hiện tại
         driver.navigate().refresh();
-        ///
-        //start
+        //trỏ thẳng đến class
+        WebElement username  = driver.findElement(By.className("t-MediaList-itemWrap"));
+        username.click();
+
+
     }
 
 
