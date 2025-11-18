@@ -32,8 +32,7 @@ private WebDriver driver;
         // làm mới trang hiện tại
         driver.navigate().refresh();
         //trỏ thẳng đến class
-        WebElement username  = driver.findElement(By.className("t-MediaList-itemWrap"));
-        username.click();
+         driver.findElement(By.className("t-MediaList-itemWrap")).click();
 
 
     }
